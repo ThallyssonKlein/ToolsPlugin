@@ -15,14 +15,15 @@ In Claude Code:
 
 ## Use
 
-Claude calls the agent on its own before starting new features. You can also ask directly:
+A `SessionStart` hook adds a short instruction to each session so Claude calls the agent on its own
+before building something new from scratch (not for bug fixes or small edits). You can also ask directly:
 
 ```
 use the stack-finder agent: I need to add PDF invoice generation to this app
 ```
 
-It replies with a verdict: **don't build (use an existing app)**, **use a library**,
-**consider**, or **build it**. It lists the matching repos and gives you one next step.
+It returns up to three options from the catalog (an existing app or a library to build on), plus "build from scratch", each with pros and cons, and marks one as recommended.
+Claude then asks you which option to follow before writing any code.
 
 The agent is read-only. It uses `Read`, `Grep`, and `Glob`, and only looks at your project's
 manifest files (`package.json`, `go.mod`, ...) to check stack compatibility.

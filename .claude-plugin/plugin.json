@@ -1,7 +1,7 @@
 {
   "name": "stack-finder",
   "displayName": "Stack Finder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Before building something from scratch, searches a curated catalog of 1,400+ libraries and ready-made apps and recommends what to reuse.",
   "author": {
     "name": "Thallysson Klein",
