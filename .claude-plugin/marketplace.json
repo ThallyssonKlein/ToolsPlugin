@@ -1,0 +1,15 @@
+{
+  "name": "tools-plugin",
+  "description": "Claude Code plugins by Thallysson Klein for reusing existing tools instead of building from scratch.",
+  "owner": {
+    "name": "Thallysson Klein",
+    "url": "https://github.com/ThallyssonKlein"
+  },
+  "plugins": [
+    {
+      "name": "stack-finder",
+      "source": "./",
+      "description": "Searches a curated catalog of libraries and ready-made apps before you build something from scratch."
+    }
+  ]
+}
